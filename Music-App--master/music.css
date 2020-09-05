@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+    background-image: url(https://blog.hdwallsource.com/wp-content/uploads/2014/11/gradient-26052-26737-hd-wallpapers.jpg.png);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+#full-div{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 5% 16%;
+    text-align: center;
+}
+#music-player-div{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    background-color: rgba(255,223,238,.4);
+    border-radius: 16px;
+    padding: 24px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 8px rgba(135,206,250,.4);
+    display: flex;
+}
+#music-div{
+    position: relative;
+    box-sizing: border-box;
+    width: 65%;
+    text-align: center;
+}
+#listMusic-div{
+    width: 35%;
+    overflow-y: auto;
+    border-left: 1px solid rgba(0,0,0,.2);
+    text-align: left;
+    padding-left: 24px;
+    box-sizing: border-box;
+    margin-left: 24px;
+}
+
+#music-logo{
+    width: 300px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    background-color: none;
+}
+.music-cards{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+.card-image{
+    box-sizing: border-box;
+    min-width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+.card-desc{
+    color: rgba(0,0,0,.6);
+    transition: all 0.3s;
+}
+.card-desc:hover{
+    color: rgba(0,0,0,1);
+
+}
+.card-heading{
+    font-size: 20px;
+}
+.card-author{
+    font-size: 17px;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #888;
+    transition: all 0.3s;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: black;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+#controls-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+#controls-div i{
+    font-size: 20px;
+    color: #15124b;
+    opacity: 0.6;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+}
+#controls-div i:hover{
+    opacity: 1;
+}
+#controls-div i:nth-child(3){
+    font-size: 46px;
+}
+#controls-div i:last-child{
+    margin: 0;
+}
+#song{
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: .5px;
+    margin-bottom: 8px;
+}
+#artist{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 0;
+}
+#progress-bar{
+    position: relative;
+    max-width: 100%;
+    height: 5px;
+    background-color: #15124b;
+    opacity: .7;
+    cursor: pointer;
+    border-radius: 6px;
+}
+#progress-bar:hover #song-duration{
+    display: block;
+}
+#song-duration{
+    display: none;
+    position : absolute;
+    margin: 0;
+    right: 0;
+    top: 10px;
+    opacity: 1;
+    font-size: 16px;
+}
+#player {
+	width: 200px;
+	height: 5px;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+    top: 15px;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+}
+i.fa-volume-down{
+  position: absolute;
+  left: -30px;
+}
+i.fa-volume-up{
+  position: absolute;
+  right: -30px
+}
+#volume{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute
+}
+
+
+#progress-report{
+    position: relative;
+    width: 1%;
+    max-width: 100%;
+    height: 5px;
+    background-color: #0096ff;
+    opacity: .5;
+    cursor: pointer;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+#progress-report:hover #song-current-time{
+    display: block;
+}
+#song-current-time{
+    display: none;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 10px;
+    color: blue;
+    opacity: 1 !important;
+    font-size: 16px;
+}
+.shuffle-active{
+    font-size: 24px;
+}
